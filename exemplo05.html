@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+                li {
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 0.1em;
+        }
+        header{
+            background-color: aquamarine;
+        }
+        footer{ 
+            background-color: pink;
+        }
+        section {
+            background-color: antiquewhite;            
+        }
+        nav {
+            background-color: lightgreen;
+            }
+            aside {
+                background-color: tomato;
+            }
+
+        .hole-grail {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns:  auto 1fr auto;
+        }
+        .hole-grail > section{
+            grid-column: 1/4;
+        }
+        .hole-grail > footer {
+            grid-column: 1/4;
+        }
+     .hole-grail > section {
+        overflow: auto;
+     }
+     .hole-grail > nav {
+        overflow: auto;
+        grid-column: 1/4;
+     }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+        <header>
+            <h1>Exemplo 05: Hole Grail</h1>
+        </header>
+        <nav>
+            <ul>
+          <li>Primeiro</li>
+          <li>Segundo</li>
+          <li>Terceiro</li>
+          <li>Quarto</li>
+          <li>Quinto</li>
+        </ul>
+        </nav>
+        <section>
+            <h2>Texto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur asperiores nam aliquid ex vel maiores dolore error accusantium tempore! Facilis soluta dignissimos explicabo ducimus quod rem possimus quibusdam in cupiditate!</p>
+            <p>Recusandae, eum deleniti! Repudiandae cum ratione cumque temporibus eaque, in, quod unde minus possimus libero consequatur eius placeat fugit ullam nobis sequi doloremque maiores dolorum itaque exercitationem, aliquid laborum? Quibusdam.</p>
+            <p>Necessitatibus mollitia placeat atque reiciendis soluta neque inventore autem impedit, aperiam, nulla consequuntur beatae? Sit, id culpa, asperiores eligendi qui aliquid doloremque delectus reprehenderit numquam, modi illum eum facere ea!</p>
+        </section>
+        <aside>
+             <ul>
+          <li>Primeiro</li>
+          <li>Segundo</li>
+          <li>Terceiro</li>
+          <li>Quarto</li>
+          <li>Quinto</li>
+        </ul>
+        </aside>
+        <footer>
+            &copy; 2026 - DCC202 - UFJF
+        </footer>
+    </article>
+    </main>
+</body>
+</html>
